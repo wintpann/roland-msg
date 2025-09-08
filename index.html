@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Decoder 🎹</title>
+    <link rel="shortcut icon" href="maze.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video class="background-video" autoplay loop muted>
+      <source src="cosmo.mp4" type="video/mp4" />
+    </video>
+    <div class="content">
+      <div class="modal at-modal hidden">
+        <div class="at-wrap">
+          <div class="at-content">
+            <div class="at-viewport">
+              <div class="at-main"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal select-modal">
+        <button class="select-file text title text-gradient button absolute">
+          Выбрать файл
+        </button>
+        <div class="transition text text-big text-gradient count-3 hidden absolute">3</div>
+        <div class="transition text text-big text-gradient count-2 hidden absolute">2</div>
+        <div class="transition text text-big text-gradient count-1 hidden absolute">1</div>
+        <div class="transition text text-big text-gradient count-progress hidden absolute">...</div>
+        <div class="transition text text-big text-gradient count-done hidden absolute">✔</div>
+      </div>
+      <div class="modal decode-modal hidden">
+        <div class="text title center">Результат:</div>
+        <div class="text text-gradient result">Привет, Сонь! Меня зовут Роланд. Мне очень нравится когда ты на мне играешь.</div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/alphaTab.js"
+    ></script>
+    <script defer type="module" src="src/main.js"></script>
+  </body>
+</html>
