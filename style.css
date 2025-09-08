@@ -121,8 +121,9 @@
 
 .result {
   font-family: Canis, serif;
-  font-size: 24px;
+  font-size: 36px;
   padding: 20px;
+  text-transform: uppercase;
 }
 
 .at-wrap {

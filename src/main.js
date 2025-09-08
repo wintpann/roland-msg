@@ -70,6 +70,9 @@ const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const startDecoding = async () => {
   const file = prompt('Ссылка на файл:');
+  if (!file) {
+    return;
+  }
 
   const api = new alphaTab.AlphaTabApi(document.querySelector('.at-main'), {
     file,
@@ -93,6 +96,7 @@ const startDecoding = async () => {
   document.querySelector('.select-file').style.pointerEvents = 'none';
 
   await wait(500);
+  document.querySelector('.select-file').remove();
 
   const atModal = document.querySelector('.at-modal');
   atModal.classList.remove('hidden');
