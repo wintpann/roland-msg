@@ -88,6 +88,9 @@ const startDecoding = async () => {
         barSeparatorColor: '#5f8ce0',
         barNumberColor: '#cbcbcb',
         mainGlyphColor: '#9f9f9f',
+        secondaryGlyphColor: '#9f9f9f',
+        titleFont: "0px 'Georgia'",
+        subTitleFont: "0px 'Georgia'",
       },
     },
   });
